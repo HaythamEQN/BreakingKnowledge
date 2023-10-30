@@ -1,0 +1,412 @@
+
+/*     Background        */
+
+body{ 
+  background-color:#211717;
+  color: rgb(0, 0, 0);
+  font-family: helvetica Neue, Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+
+}
+
+header{
+  background-color:#211717;
+  color: rgb(0, 0, 0);
+  font-family: helvetica Neue, Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+  background-image: url(images/home\ page\ 1.jpg);
+  background-size: 100% 100%;
+ background-position: center;
+  background-repeat: no-repeat;
+  image-rendering:-webkit-optimize-contrast;
+ height: 350px;
+ padding: 20px;
+  text-align: center;
+ 
+}
+
+section{ background-color:#76432f;
+  color:  rgb(255, 255, 255);
+  padding: 20px;
+  display: flex;
+  flex-direction: row ;
+ 
+}
+
+footer{background:#211717;
+  padding: 10px 20px;
+  text-align: center;
+  background-attachment: fixed;
+  }
+
+
+
+  .tit {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+  }
+
+
+  .titholder {
+    position: absolute;
+    top: 30px; /* Adjust the top position as needed */
+    left: 570px; /* Adjust the left position as needed */
+    width: 300px; /* Adjust the width as needed */
+    height: 70px; /* Adjust the height as needed */
+    background-color:black; /* Adjust the background color and opacity as needed */
+    z-index: 1; /* Ensure the box is on top of the image */
+    border-radius: 20px;
+  }
+.titholder h1{
+  margin:0;
+  text-align: center;
+}
+
+/*    background end  */
+
+
+
+
+ /*     Navigation System     */ 
+
+.navigationsec{
+  text-align: center;
+}
+
+.containernav{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.Nav-bar{
+  display: block;
+  margin-bottom: 15px 0 ;
+  background-color: #03a9f4;
+  box-shadow: 0 2px 5px 0 rgba(229, 229, 229, 0.3) ;
+  border-radius: 3px;
+}
+
+.nav-bar ul{
+list-style: none;
+margin: 0;
+display: block;
+}
+
+.nav-bar li{
+  list-style: none;
+margin: 0;
+display: inline-block;
+position: relative;
+font-size: 14px;
+color: #def1f0;
+}
+
+.nav-bar li a {
+  padding: 15px 20px;
+ font-size: 14px;
+ display: inline-block;
+outline:0;
+font-weight: 400;
+color: #c8bdbd;
+background-color:#583024;
+border-radius: 10px;
+margin-left: 30px;
+text-decoration: none;
+}
+
+.nav-bar li:hover ul.dropdown{
+  display: block;
+}
+
+.nav-bar li ul.dropdown{
+  position: absolute;
+display: none;
+width: 200px;
+background:#583024 ;
+ box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+ padding-top: 0;
+}
+
+.nav-bar li ul.dropdown li{
+display: block;
+list-style-type: none;
+}
+
+.nav-bar li ul.dropdown li a{
+padding: 15px 20px;
+font-size: 15;
+color: #fff;
+display: block;
+font-weight: 400;
+}
+
+.nav-bar li ul.dropdown li:last-child a {border-bottom:none;}
+ 
+.nav-bar li hover a
+{background: #000000;
+  color: #fff !important;
+}
+
+.nav-bar li:first-child:hover a {border-radius :3px 0 0 3px ;}
+ .nav-bar li ul.dropdown li:hover a { background: 0 0 0 0.1;}
+ .nav-bar li ul.dropdown li:first-child:hover a{border-radius: 0;}
+ .nav-bar li:hover .arrowdown {border-top: 5px solid #fff;}
+
+ .arrow-down{
+  width: 0;
+height: 0;
+border-left: 5px solid transparent ;
+border-right: 5px solid transparent;
+border-top: 5px solid #c7cbcb;
+position: relative;
+top: 15px;
+right: -5px;
+content: '';
+}
+
+@media only screen and (max-width:900px){
+
+.nav-bar {
+  background :#c13a3a;
+  width: 200px;
+  height: 100%;
+  display: block ;
+  position: fixed;
+left:-200px;
+}
+
+.nav-bar-visible {
+  left:0px;
+  transition: left 0.3s ease ;
+}
+
+.nav-mobile{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 50px;
+margin: 0;
+position: absolute ;
+top:0px;
+left:0px;
+background: #03a9f4;
+padding: 120x 0 0 10px;
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.menu-icon{
+  cursor: pointer;
+}
+
+.menu-icon span{
+height:  2px;
+background:#fff;
+margin:5px;
+display:block;
+width:20px;
+}
+
+.nav-bar ul{padding-top:50px;}
+ 
+.nav-bar li {display: block;}
+
+.nav-bar li a { display: block;
+color:#505050;
+font-weight: 600;
+}
+
+.nav-bar li:first-child:hover a{border-radius: 0;}
+
+.nav-bar li ul.dropdown{position: relative;}
+
+.nav-bar li ul.dropdown li a{
+  background:#020202 !important;
+  border-bottom: none;
+  color: #fff !important;
+}
+
+.nav-bar li ul.dropdown  li:hover a {
+background: rgba(0, 0, 0, 0.1) !important;
+color: #fff !important;
+}
+
+.nav-bar li ul.dropdown li a {padding:10px  10px 10px 30px}
+.nav-bar li:hover .arrow-down{border:5px solid #fff;}
+.arrow-down{
+border-top:5px solid #505050;
+position: absolute;
+top: 20px;
+right: 10px;
+}
+}
+
+/*   Navigation code ends    */
+
+
+
+
+/*   Homepage links         */
+
+ul{
+  margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+li{
+display: inline-block;
+margin:  0 20px  0 0 ;
+}
+
+.rechthoek {
+    width: 300px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.vierkant{ 
+width: 320px;
+border-radius: 20px;
+margin: 10px;
+height: 170px;
+}
+
+.groot{
+  width: 300px;
+  height: 170px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+h2{
+  color: black;
+  text-align: center;
+}
+
+.box{
+  margin-left: 120px ;
+}
+
+/*     Homepage links end      */
+
+
+
+
+/*     Circles Character Pages          */
+
+.seasons{ border-radius: 
+  50%;
+  width: 210px;
+}
+
+.seasonsR{
+  border-radius: 50%;
+  width: 220px;
+  height: 210px; ;
+}
+
+.seasonsV{
+border-radius: 50%;
+width: 200px;
+height: 200px;
+}
+ 
+.rond{
+  margin-left: 70px;
+  text-align: center;
+}
+
+/*     Circles Character Pages  end        */
+ 
+
+
+
+/*      Character Pages info                  */
+
+.flex-container{
+  
+  height:auto;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.seasonbox{
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(rgb(120, 67, 16),rgb(139, 110, 51));
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  text-align: center;
+  line-height: 10px;
+  border-radius: 20px;
+  margin :10px;
+  margin-top: 30px;
+  font-style:italic;
+}
+ 
+.s1{
+  width:250px;
+  border-radius: 20px;
+  height: auto;
+  margin: 10px;
+  margin-top: 30px;
+  
+}
+ 
+ .flex-container-s1{
+  width: 1000px ;
+  height: 1000px;
+  background: linear-gradient(rgb(120, 67, 16),rgb(139, 110, 51));
+  border-radius: 30px;
+ }
+
+/*      Character Pages info end     */
+
+
+
+
+/*    Character info            */
+
+
+.chainfo{text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  font-style: oblique;
+   color: gray;
+}
+
+h4{
+  color: rgb(47, 155, 155);
+  margin: 30px;
+}
+
+h1{ color:  rgb(34, 158, 158) ;
+  font-style: verdana;
+margin: 20px;
+padding: 20px;
+
+
+}
+
+.informationcha{
+  margin-top: -15px;
+  margin-left: 30px;
+}
+ 
+
+.linkspeeps{
+text-decoration: none;
+color: #03a9f4;
+
+}
+/*    Character info            */
